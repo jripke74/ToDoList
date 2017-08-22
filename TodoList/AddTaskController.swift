@@ -21,6 +21,8 @@ class AddTaskController: UIViewController {
         let item = NSEntityDescription.insertNewObject(forEntityName: "Item", into: managedObjecContext) as! Item
         item.text = text
         
+        managedObjecContext.saveChanges()
+        
         dismiss(animated: true, completion: nil)
     }
     
