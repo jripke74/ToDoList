@@ -13,6 +13,7 @@
 		89C72E6D1F4C6AC10099CD88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89C72E6C1F4C6AC10099CD88 /* Assets.xcassets */; };
 		89C72E701F4C6AC10099CD88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89C72E6E1F4C6AC10099CD88 /* LaunchScreen.storyboard */; };
 		89C72E781F4C6C950099CD88 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C72E771F4C6C950099CD88 /* CoreDataStack.swift */; };
+		89C72E7B1F4C80A80099CD88 /* TodoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 89C72E791F4C80A80099CD88 /* TodoList.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		89C72E6F1F4C6AC10099CD88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C72E711F4C6AC10099CD88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89C72E771F4C6C950099CD88 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		89C72E7A1F4C80A80099CD88 /* TodoList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TodoList.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				89C72E6C1F4C6AC10099CD88 /* Assets.xcassets */,
 				89C72E6E1F4C6AC10099CD88 /* LaunchScreen.storyboard */,
 				89C72E711F4C6AC10099CD88 /* Info.plist */,
+				89C72E791F4C80A80099CD88 /* TodoList.xcdatamodeld */,
 			);
 			path = TodoList;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 				89C72E781F4C6C950099CD88 /* CoreDataStack.swift in Sources */,
 				89C72E681F4C6AC10099CD88 /* ViewController.swift in Sources */,
 				89C72E661F4C6AC10099CD88 /* AppDelegate.swift in Sources */,
+				89C72E7B1F4C80A80099CD88 /* TodoList.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +314,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		89C72E791F4C80A80099CD88 /* TodoList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				89C72E7A1F4C80A80099CD88 /* TodoList.xcdatamodel */,
+			);
+			currentVersion = 89C72E7A1F4C80A80099CD88 /* TodoList.xcdatamodel */;
+			path = TodoList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 89C72E5A1F4C6AC10099CD88 /* Project object */;
 }
