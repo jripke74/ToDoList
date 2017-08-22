@@ -15,6 +15,8 @@
 		89C72E7B1F4C80A80099CD88 /* TodoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 89C72E791F4C80A80099CD88 /* TodoList.xcdatamodeld */; };
 		89C72E7D1F4C82880099CD88 /* TodoListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C72E7C1F4C82880099CD88 /* TodoListController.swift */; };
 		89C72E7F1F4C838C0099CD88 /* AddTaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C72E7E1F4C838C0099CD88 /* AddTaskController.swift */; };
+		89C72E821F4C90760099CD88 /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C72E801F4C90760099CD88 /* Item+CoreDataClass.swift */; };
+		89C72E831F4C90760099CD88 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C72E811F4C90760099CD88 /* Item+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		89C72E7A1F4C80A80099CD88 /* TodoList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TodoList.xcdatamodel; sourceTree = "<group>"; };
 		89C72E7C1F4C82880099CD88 /* TodoListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListController.swift; sourceTree = "<group>"; };
 		89C72E7E1F4C838C0099CD88 /* AddTaskController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskController.swift; sourceTree = "<group>"; };
+		89C72E801F4C90760099CD88 /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Item+CoreDataClass.swift"; path = "../Item+CoreDataClass.swift"; sourceTree = "<group>"; };
+		89C72E811F4C90760099CD88 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Item+CoreDataProperties.swift"; path = "../Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,8 @@
 				89C72E771F4C6C950099CD88 /* CoreDataStack.swift */,
 				89C72E7E1F4C838C0099CD88 /* AddTaskController.swift */,
 				89C72E7C1F4C82880099CD88 /* TodoListController.swift */,
+				89C72E801F4C90760099CD88 /* Item+CoreDataClass.swift */,
+				89C72E811F4C90760099CD88 /* Item+CoreDataProperties.swift */,
 				89C72E691F4C6AC10099CD88 /* Main.storyboard */,
 				89C72E6C1F4C6AC10099CD88 /* Assets.xcassets */,
 				89C72E6E1F4C6AC10099CD88 /* LaunchScreen.storyboard */,
@@ -146,6 +152,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89C72E831F4C90760099CD88 /* Item+CoreDataProperties.swift in Sources */,
+				89C72E821F4C90760099CD88 /* Item+CoreDataClass.swift in Sources */,
 				89C72E7D1F4C82880099CD88 /* TodoListController.swift in Sources */,
 				89C72E7F1F4C838C0099CD88 /* AddTaskController.swift in Sources */,
 				89C72E781F4C6C950099CD88 /* CoreDataStack.swift in Sources */,

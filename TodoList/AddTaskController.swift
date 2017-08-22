@@ -7,12 +7,20 @@
 //
 
 import UIKit
+import CoreData
 
 class AddTaskController: UIViewController {
     
+    let managedObjecContext = CoreDataStack().managedObjectContext
     @IBOutlet weak var textField: UITextField!
     
     @IBAction func save(_ sender: Any) {
+        
+        guard let text = textField.text, !text.isEmpty else { return }
+        
+        let item = NSEntityDescription.insertNewObject(forEntityName: "Item", into: managedObjecContext) as! Item
+        item.text = text
+        
         dismiss(animated: true, completion: nil)
     }
     
