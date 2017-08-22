@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  TodoListController.swift
 //  TodoList
 //
 //  Created by Jeff Ripke on 8/22/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class TodoListController: UITableViewController {
 
-
+    
 }
