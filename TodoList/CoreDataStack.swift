@@ -23,4 +23,18 @@ class CoreDataStack {
         return NSManagedObjectModel(contentsOf: modelUrl)!
     }()
     
+    private(set) lazy var persistentStoreCoordinator: NSPersistentStoreCoordinator = {
+        let coordinator = NSPersistentStoreCoordinator(managedObjectModel: self.managedObjectModel)
+        let url = self.applicationDocumentDirectory.appendingPathComponent("TodoList.sqlite")
+        
+        do {
+            try coordinator.addPersistentStore(ofType: NSSQLiteStoreType, configurationName: nil, at: url)
+        } catch {
+            print(error)
+            abort()
+        }
+        
+        return coordinator
+    }()
+    
 }
