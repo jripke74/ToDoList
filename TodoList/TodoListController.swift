@@ -13,23 +13,9 @@ class TodoListController: UITableViewController {
     
     let managedObjectContext = CoreDataStack().managedObjectContext
     
-    lazy var fetchedResultsController: NSFetchedResultsController<Item> = {
-        let request: NSFetchRequest<Item> = Item.fetchRequest()
-        let controller = NSFetchedResultsController(fetchRequest: request, managedObjectContext: self.managedObjectContext, sectionNameKeyPath: nil, cacheName: nil)
-        return controller
+    lazy var fetchedResultsController: TodoFetchedResultsController = {
+        return TodoFetchedResultsController(managedObjectContext: self.managedObjectContext, tableView: self.tableView)
     }()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        fetchedResultsController.delegate = self
-        let request: NSFetchRequest<Item> = Item.fetchRequest()
-        
-        do {
-            try fetchedResultsController.performFetch()
-        } catch {
-            print("Error fetching item objects: \(error.localizedDescription)")
-        }
-    }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return fetchedResultsController.sections?.count ?? 0
@@ -60,11 +46,5 @@ class TodoListController: UITableViewController {
             let addTaskController = navigationController.topViewController as! AddTaskController
             addTaskController.managedObjecContext = self.managedObjectContext
         }
-    }
-}
-
-extension TodoListController: NSFetchedResultsControllerDelegate {
-    func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
-        tableView.reloadData()
     }
 }

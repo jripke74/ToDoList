@@ -26,4 +26,9 @@ class TodoFetchedResultsController: NSFetchedResultsController<Item>, NSFetchedR
             print("Unresolved error: \(error.localizedDescription)")
         }
     }
+    
+    // MARK: - Fetched Results Controller Delegate
+    func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+        tableView.reloadData()
+    }
 }
