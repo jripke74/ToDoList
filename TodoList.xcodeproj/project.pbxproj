@@ -17,6 +17,7 @@
 		89C72E7F1F4C838C0099CD88 /* AddTaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C72E7E1F4C838C0099CD88 /* AddTaskController.swift */; };
 		89C72E821F4C90760099CD88 /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C72E801F4C90760099CD88 /* Item+CoreDataClass.swift */; };
 		89C72E831F4C90760099CD88 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C72E811F4C90760099CD88 /* Item+CoreDataProperties.swift */; };
+		89FA388B1F4DDCCA008F703C /* TodoFetchedResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FA388A1F4DDCCA008F703C /* TodoFetchedResultsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		89C72E7E1F4C838C0099CD88 /* AddTaskController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskController.swift; sourceTree = "<group>"; };
 		89C72E801F4C90760099CD88 /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Item+CoreDataClass.swift"; path = "../Item+CoreDataClass.swift"; sourceTree = "<group>"; };
 		89C72E811F4C90760099CD88 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Item+CoreDataProperties.swift"; path = "../Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		89FA388A1F4DDCCA008F703C /* TodoFetchedResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoFetchedResultsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				89C72E6E1F4C6AC10099CD88 /* LaunchScreen.storyboard */,
 				89C72E711F4C6AC10099CD88 /* Info.plist */,
 				89C72E791F4C80A80099CD88 /* TodoList.xcdatamodeld */,
+				89FA388A1F4DDCCA008F703C /* TodoFetchedResultsController.swift */,
 			);
 			path = TodoList;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 				89C72E821F4C90760099CD88 /* Item+CoreDataClass.swift in Sources */,
 				89C72E7D1F4C82880099CD88 /* TodoListController.swift in Sources */,
 				89C72E7F1F4C838C0099CD88 /* AddTaskController.swift in Sources */,
+				89FA388B1F4DDCCA008F703C /* TodoFetchedResultsController.swift in Sources */,
 				89C72E781F4C6C950099CD88 /* CoreDataStack.swift in Sources */,
 				89C72E661F4C6AC10099CD88 /* AppDelegate.swift in Sources */,
 				89C72E7B1F4C80A80099CD88 /* TodoList.xcdatamodeld in Sources */,
@@ -324,6 +328,7 @@
 				89C72E761F4C6AC10099CD88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

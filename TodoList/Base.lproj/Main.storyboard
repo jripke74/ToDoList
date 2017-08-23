@@ -45,7 +45,7 @@
                     <navigationItem key="navigationItem" id="ImW-An-kDd">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="LGW-th-qME">
                             <connections>
-                                <segue destination="gPS-41-Ts6" kind="presentation" id="5D1-RI-pJp"/>
+                                <segue destination="gPS-41-Ts6" kind="presentation" identifier="newItem" id="5D1-RI-pJp"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -98,7 +98,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sb5-A5-qK7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3287" y="130"/>
+            <point key="canvasLocation" x="3137" y="123"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rUh-le-Kyv">
@@ -134,7 +134,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pii-YA-rbw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2513" y="130"/>
+            <point key="canvasLocation" x="2372" y="123"/>
         </scene>
     </scenes>
 </document>

@@ -11,7 +11,7 @@ import CoreData
 
 class AddTaskController: UIViewController {
     
-    let managedObjecContext = CoreDataStack().managedObjectContext
+    var managedObjecContext: NSManagedObjectContext!
     @IBOutlet weak var textField: UITextField!
     
     @IBAction func save(_ sender: Any) {

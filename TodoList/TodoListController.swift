@@ -21,7 +21,7 @@ class TodoListController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        fetchedResultsController.delegate = self
         let request: NSFetchRequest<Item> = Item.fetchRequest()
         
         do {
@@ -51,5 +51,20 @@ class TodoListController: UITableViewController {
         let item = fetchedResultsController.object(at: indexPath)
         cell.textLabel?.text = item.text
         return cell
+    }
+    
+    // MARK: Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "newItem" {
+            let navigationController = segue.destination as! UINavigationController
+            let addTaskController = navigationController.topViewController as! AddTaskController
+            addTaskController.managedObjecContext = self.managedObjectContext
+        }
+    }
+}
+
+extension TodoListController: NSFetchedResultsControllerDelegate {
+    func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+        tableView.reloadData()
     }
 }
