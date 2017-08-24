@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8947084B1F4F149800285C95 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8947084A1F4F149800285C95 /* DetailViewController.swift */; };
 		89C72E661F4C6AC10099CD88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C72E651F4C6AC10099CD88 /* AppDelegate.swift */; };
 		89C72E6B1F4C6AC10099CD88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89C72E691F4C6AC10099CD88 /* Main.storyboard */; };
 		89C72E6D1F4C6AC10099CD88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89C72E6C1F4C6AC10099CD88 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8947084A1F4F149800285C95 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		89C72E621F4C6AC10099CD88 /* TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89C72E651F4C6AC10099CD88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89C72E6A1F4C6AC10099CD88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				89C72E711F4C6AC10099CD88 /* Info.plist */,
 				89C72E791F4C80A80099CD88 /* TodoList.xcdatamodeld */,
 				89FA388A1F4DDCCA008F703C /* TodoFetchedResultsController.swift */,
+				8947084A1F4F149800285C95 /* DetailViewController.swift */,
 			);
 			path = TodoList;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8947084B1F4F149800285C95 /* DetailViewController.swift in Sources */,
 				89C72E831F4C90760099CD88 /* Item+CoreDataProperties.swift in Sources */,
 				89C72E821F4C90760099CD88 /* Item+CoreDataClass.swift in Sources */,
 				89C72E7D1F4C82880099CD88 /* TodoListController.swift in Sources */,

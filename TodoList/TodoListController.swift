@@ -33,10 +33,23 @@ class TodoListController: UITableViewController {
         return configureCell(cell, at: indexPath)
     }
     
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        
+        let item = fetchedResultsController.object(at: indexPath)
+        managedObjectContext.delete(item)
+        managedObjectContext.saveChanges()
+    }
+    
     private func configureCell(_ cell: UITableViewCell, at indexPath: IndexPath) -> UITableViewCell {
         let item = fetchedResultsController.object(at: indexPath)
         cell.textLabel?.text = item.text
         return cell
+    }
+    
+    // MARK: UITableViewDelegate
+    
+    override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
+        return .delete
     }
     
     // MARK: Navigation
@@ -45,6 +58,16 @@ class TodoListController: UITableViewController {
             let navigationController = segue.destination as! UINavigationController
             let addTaskController = navigationController.topViewController as! AddTaskController
             addTaskController.managedObjecContext = self.managedObjectContext
+        } else if segue.identifier == "showDetail" {
+            guard let detailVC = segue.destination as? DetailViewController,
+                let indexPath = tableView.indexPathForSelectedRow else {
+                    return
+            }
+            let item = fetchedResultsController.object(at: indexPath)
+            detailVC.item = item
+            detailVC.context = self.managedObjectContext
         }
     }
+    
+    
 }
